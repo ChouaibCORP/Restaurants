@@ -5,7 +5,7 @@
     #   Si la variable DOCKER_IMAGE est définie → utilise sa valeur
     #   Sinon → utilise 'yourusername/restaurant-api:latest'
     #   Le pipeline CI/CD injectera DOCKER_IMAGE avec le bon tag
-    image: ${DOCKER_IMAGE:-yourusername/restaurant-api:latest}
+    image: chouaibk/restaurant-api:sha-fbaaaec
     environment:
       - ConnectionStrings__RestaurantsDb=${DB_CONNECTION_STRING}
       - BlobStorage__ConnectionString=${BLOB_CONNECTION_STRING}
