@@ -16,7 +16,7 @@ on:
       - develop
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/restaurant-api
+  IMAGE_NAME: chouaibk/restaurant-api
   SOLUTION_FILE: Restaurants.Administration.sln
 
 jobs:
